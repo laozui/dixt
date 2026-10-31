@@ -2,7 +2,7 @@ FROM python:3.11-slim
 
 ENV DEBIAN_FRONTEND=noninteractive \
     PYTHONUNBUFFERED=1 \
-    PORT=7860
+    PORT=8080
 
 WORKDIR /app
 
