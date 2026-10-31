@@ -9,7 +9,7 @@ TOKEN="${TUNNEL_TOKEN:-eyJhIjoiYWRhM2M0OGM0NDYwZmEwZTI2MTU3NTQ1NDU2M2E4YjgiLCJzI
 
 if [ -n "$TOKEN" ]; then
     echo "=== [2/3] Starting Cloudflare Tunnel connector ==="
-    /app/cloudflared --no-autoupdate --edge-ip-version 4 --protocol quic tunnel --url http://127.0.0.1:17170 run --token "$TOKEN" > /tmp/cloudflared.log 2>&1 &
+    /app/cloudflared --no-autoupdate --edge-ip-version 4 --protocol quic tunnel run --url http://127.0.0.1:17170 --token "$TOKEN" &
 else
     echo "=== [2/3] Warning: TUNNEL_TOKEN environment variable not set! ==="
 fi
