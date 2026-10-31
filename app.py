@@ -179,8 +179,8 @@ HTML_TEMPLATE = """
         </div>
 
         <div class="footer">
-            <div><span class="status-dot"></span>服务就绪 (2 vCPU · 16GB Container)</div>
-            <div>v1.0.0 · HuggingFace Spaces</div>
+            <div><span class="status-dot"></span>服务就绪 (Cloud Linux Container)</div>
+            <div>v1.0.0 · Web Toolbox</div>
         </div>
     </div>
 
